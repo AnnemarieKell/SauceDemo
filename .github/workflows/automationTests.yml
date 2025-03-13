@@ -2,21 +2,21 @@ name: Automation Tests
 
 on:
   workflow_dispatch:
-    inputs:
-      name:
-        description: 'tags'
-        required: false
-        default: '@task'
-        type: choice
-        options:
-          - '@task'
+    # inputs:
+    #   name:
+    #     description: 'tags'
+    #     required: false
+    #     default: '@task'
+    #     type: choice
+    #     options:
+    #       - '@task'
 
   workflow_call:
-    inputs:
-      tags:
-        required: false
-        type: string
-        default: '@task'
+    # inputs:
+    #   tags:
+    #     required: false
+    #     type: string
+    #     default: '@task'
 
 permissions: write-all
 jobs:
