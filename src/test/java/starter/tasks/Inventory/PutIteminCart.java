@@ -7,7 +7,7 @@ import starter.Pages.inventory.inventory;
 
 public class PutIteminCart {
 
-    public static Performable putHighestPricedItemInCart(Actor actor) {
+    public static Performable putPricedItemInCart(Actor actor) {
 
         return Task.where( "puts item in cart ",
                 inventory::putPricedItemInCart);

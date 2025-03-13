@@ -1,20 +1,13 @@
 package starter.stepdefinitions.searchInventory;
 
-
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Switch;
 import net.serenitybdd.screenplay.ensure.Ensure;
-
-
 import starter.Pages.headerPage;
-import starter.tasks.Inventory.CheckPrice;
 import starter.tasks.Inventory.SelectItem;
-
 import static starter.tasks.Inventory.CheckPrice.checkhighestPrice;
 import static starter.tasks.Inventory.CheckPrice.checklowestPrice;
-import static starter.tasks.Inventory.PutIteminCart.putHighestPricedItemInCart;
+import static starter.tasks.Inventory.PutIteminCart.putPricedItemInCart;
 import static starter.tasks.Inventory.PutIteminCart.verifyRemoveButton;
 
 public class SearchShopStepDefinitions {
@@ -46,7 +39,7 @@ public class SearchShopStepDefinitions {
     @When("{actor} puts this item in the cart")
     public void he_puts_this_item_in_the_cart(Actor actor) {
 
-        actor.attemptsTo(putHighestPricedItemInCart(actor));
+        actor.attemptsTo(putPricedItemInCart(actor));
 
     }
     @When("{actor} selects the highest priced item")
