@@ -2,21 +2,21 @@ name: Automation Tests
 
 on:
   workflow_dispatch:
-    # inputs:
-    #   name:
-    #     description: 'tags'
-    #     required: false
-    #     default: '@task'
-    #     type: choice
-    #     options:
-    #       - '@task'
+    inputs:
+      environment:
+        description: 'tags'
+        required: false
+        default: '@task'
+        type: choice
+        options:
+          - '@task'
 
   workflow_call:
-    # inputs:
-    #   tags:
-    #     required: false
-    #     type: string
-    #     default: '@task'
+    inputs:
+      tags:
+        required: false
+        type: string
+        default: '@task'
 
 permissions: write-all
 jobs:
@@ -51,9 +51,10 @@ jobs:
       - name: Test Run
         working-directory: .
         run: mvn clean verify
+        
       - name: upload test Reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: Testreports
-          path: ./target/site
+          path: ./target/site/serenity
