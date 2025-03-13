@@ -74,7 +74,7 @@ To run it through Github Actions:
 - select [Automation Tests]( https://github.com/AnnemarieKell/SauceDemo/actions/workflows/automationTests.yml) 
 - run the workflow by manually triggering it
 - [x] a new job will run
-- once completed click on job to view the Summary 
+- once completed click on job to view the Summary [Example](https://github.com/AnnemarieKell/SauceDemo/actions/runs/13831529042)
 - download the reports attached to the Summary bottom
 
     
