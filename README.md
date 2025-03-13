@@ -1,7 +1,7 @@
 # Sauce Demo UI Test Project
 
 ## Introduction
-Name| XXXXXXXXXXX
+Name| Annemarie Keller
 ---------------|-------------
 Project| Mercator Coding Assignment - Java
 Website used | http://www.saucedemo.com
@@ -41,21 +41,13 @@ This project uses Java with Serenity Screenplay to Select an item from the Sauce
 ###### Implementation
 
 Java with Serenity ScreenPlay framework used with GithubActions for CI/CD
-![](.readme_images/03c24252.png)
 
 In the serenity conf file it is possible to set the passwords and browser configuration;
-Executeable chrome Driver is downloaded automatically through Selenium via WebdriverManager, no need for manual download
-![](.readme_images/a9fc57d5.png)
+Executeable chromeDriver is downloaded automatically through Selenium via WebdriverManager, no need for manual download
 
-This implemenation uses Tasks as it tries to follow the Screenplay implementaion
-![](.readme_images/9c00d354.png)
+
+This implemenation uses Tasks as it tries to follow the Screenplay implementation
 As its a BDD type Project the tests are written in the feature files and then implemented on the StepDefiniton layer
-
-
-
-
-
-
 
 
 ### Installation Guide
@@ -77,7 +69,15 @@ you will find the reports under
 ````
 /target/site/serenity/index.html
 ```` 
-For running it through Github Actions,  you can go to Github Actions , select Automation Tests and download the Reports attached to the Summary
+To run it through Github Actions:
+- go to Github Actions
+- select [Automation Tests]( https://github.com/AnnemarieKell/SauceDemo/actions/workflows/automationTests.yml) 
+- run the workflow by manually triggering it
+- [x] a new job will run
+- once completed click on job to view the Summary 
+- download the reports attached to the Summary bottom
+
+    
 
 
  
